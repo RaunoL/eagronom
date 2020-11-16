@@ -32,7 +32,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `Known issues`
 
 Project is missing unit tests
+
 Styles should be organised in folders and use variables for colors, text styles etc.
+
 Clicking outside of dropdown does not currently close it. This should be fixed by creating a ref for the background and adding an event listener which would change redux state
+
 Currently redux actions are in one file and reducers are in different ones but it should be consistent
+
 Code could be formated for consistency
