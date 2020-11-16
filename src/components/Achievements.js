@@ -19,15 +19,15 @@ function Achievements() {
             </div>
 
             <ul className="dropdown-list">
-                {achievements.map(achievement =>
-                    <li>
+                {achievements.map((achievement, index) =>
+                    <li key={index}>
                         <h5 className={(achievement.progressValue === 100)? "full" : ""}>{achievement.name}</h5>
                         <p className="text-muted">
                             {achievement.desc}
                         </p>
                         <div className="progress-container">
                             <ProgressBar width={achievement.progressValue} />
-                            <div className="progress-name"><p>{(achievement.progressValue === 100) ? <div className="material-icons-outlined full">check</div> :  achievement.progressName }</p></div>
+                            <div className="progress-name">{(achievement.progressValue === 100) ? <div className="material-icons-outlined full">check</div> :  <p>{achievement.progressName}</p> }</div>
                         </div>
                     </li>
                 )}

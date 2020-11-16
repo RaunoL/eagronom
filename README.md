@@ -40,3 +40,5 @@ Clicking outside of dropdown does not currently close it. This should be fixed b
 Currently redux actions are in one file and reducers are in different ones but it should be consistent
 
 Code could be formated for consistency
+
+Clicing on padding of the company does not change currently selected company
